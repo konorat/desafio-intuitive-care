@@ -21,7 +21,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         String url = "https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-sociedade/atualizacao-do-rol-de-procedimentos";
-        String dir = System.getProperty("user.dir") + "\\src\\files\\";
+        String dir = System.getProperty("user.dir") + "/src/files/";
 
         findFilesInWebPage(url,dir);
         zipDirectory(dir, dir + String.valueOf(Instant.now().toEpochMilli())+ "_files.zip");
